@@ -1,0 +1,14 @@
+{
+  "name": "robo",
+  "version": "0.0.0",
+  "description": "Robo game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Brett Houtz",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}

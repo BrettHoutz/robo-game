@@ -1,0 +1,2 @@
+CREATE TABLE Meta(key TEXT PRIMARY KEY, value TEXT);
+INSERT INTO Meta VALUES("foo", "bar");

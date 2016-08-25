@@ -1,0 +1,44 @@
+RsrcNode {
+  "type": //resource class
+  "rank": uint
+  "quant": uint
+  "adj": [RsrcNode]
+}
+
+Mission
+
+Player
+
+Area {
+  "x": num,
+  "y": num,
+  "width": num,
+  "height": num
+  "xregions": [Region],
+  "xchunks": [Chunk]
+}
+
+Tile isa Area {
+  "rsrc": RsrcNode
+}
+
+Chunk isa Area {
+  "subchunks": [Chunk]/Tile
+}
+
+Region isa Area {
+  "subregions": [Region]
+}
+
+Continent isa Region {
+  "adj": [Ocean]
+}
+
+Ocean isa Region {
+  "adj": [Continent]
+}
+
+Planet isa Region, Chunk {
+  "continents": [Continent],
+  "oceans": [Ocean]
+}
